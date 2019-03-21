@@ -16,4 +16,4 @@ function configAndSimulate {
 
 configAndSimulate&
 
-gcloud  --quiet beta emulators pubsub start
+gcloud  --quiet beta emulators pubsub start --host-port=0.0.0.0:8085
