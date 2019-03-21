@@ -1,2 +1,4 @@
 # pubsub-emulator-docker
-Image Docker with pubsub emulator 
+Image Docker with Google Pubsub Emulator 
+
+  Create topics, subscriptions and send custom messages through pubsub_emulator.sh
