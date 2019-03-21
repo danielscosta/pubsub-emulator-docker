@@ -1,0 +1,13 @@
+version: '2.4'
+
+services:
+  pubsub-emulator:
+    build: .
+    user: root
+    ports:
+     - "8085:8085"
+    command: ["sh","/scripts/pubsub_emulator.sh"]
+    volumes:
+     - ./pubsub_emulator.sh:/scripts/pubsub_emulator.sh
+     - ./wait-for-it.sh:/scripts/wait-for-it.sh
+     - ./custom_publisher.py:/python-api-pubsub-emulator/pubsub/cloud-client/custom_publisher.py 
